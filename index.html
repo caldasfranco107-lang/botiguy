@@ -1,266 +1,215 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Botiguy | Tu tienda integral</title>
+  <title>Botiguy Ã¢â‚¬â€ Tu tienda integral</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Script principal (deferred) -->
   <script src="js/main.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
+  <!-- Header / Navbar -->
+  <header class="header">
     <div class="brand">
-      <div class="logo">???</div>
+      <div class="brand-logo" aria-hidden="true">
+        <!-- simple SVG logo (no emoji) -->
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="2" width="20" height="20" rx="5" fill="#0ff" opacity="0.12"/>
+          <path d="M6 12h12" stroke="#00e5ff" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M6 7h12" stroke="#7c3aed" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M6 17h12" stroke="#ffb400" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+      </div>
       <div class="brand-text">
         <h1>Botiguy</h1>
-        <p class="tag">Donde innovación, estilo y confianza se encuentran</p>
+        <p class="brand-sub">Donde innovaciÃƒÂ³n, estilo y confianza se encuentran</p>
       </div>
     </div>
-    <nav class="main-nav">
-      <a href="#peluqueria">Peluquería</a>
-      <a href="#cuidado">Cuidado Personal</a>
-      <a href="#autos">Automóviles</a>
-      <a href="#verano">Verano</a>
-      <a href="#hogar">Hogar</a>
-      <a href="#camping">Camping</a>
-      <a href="#tecnologia">Tecnología</a>
-      <a href="#gadgets">Gadgets</a>
+
+    <nav class="nav">
+      <a href="#peluqueria">PeluquerÃƒÂ­a</a>
+      <a href="#mascotas">Mascotas</a>
+      <a href="#autos">AutomÃƒÂ³viles</a>
       <a href="#otros">Otros</a>
-      <a class="link-site" href="https://botiguy.demo-store.website/" target="_blank" rel="noopener">Ir al sitio oficial</a>
+      <a class="btn-site" href="https://botiguy.demo-store.website/" target="_blank" rel="noopener">Ir a la tienda</a>
     </nav>
   </header>
 
+  <!-- Hero -->
   <section class="hero">
-    <div class="hero-inner">
-      <div class="hero-copy">
-        <h2 class="marketing-title">Transforma tu día a día con productos y servicios premium</h2>
-        <p class="marketing-text">
-          En <strong>Botiguy</strong> combinamos diseño audaz, calidad profesional y tecnología para ofrecer soluciones en Peluquería, Belleza Mascotas, Automóviles y mucho más. Explora nuestras categorías y descubre ofertas seleccionadas.
-        </p>
-        <div class="hero-ctas">
-          <a class="btn btn-primary" href="https://botiguy.demo-store.website/categoria/peluqueria-y-barberia-225805" target="_blank" rel="noopener">Ir a Peluquería</a>
-          <a class="btn btn-outline" href="https://botiguy.demo-store.website/categoria/cuidado-personal-y-salud-225805" target="_blank" rel="noopener">Cuidado personal</a>
-          <a class="btn btn-ghost" href="https://botiguy.demo-store.website/" target="_blank" rel="noopener">Visitar tienda</a>
-        </div>
-      </div>
+    <div class="hero-left">
+      <h2 class="hero-title">Transforma tu estilo. Cuida lo que amas. Impulsa lo que conduces.</h2>
+      <p class="hero-sub">
+        En <strong>Botiguy</strong> reunimos productos y servicios profesionales: PeluquerÃƒÂ­a & BarberÃƒÂ­a,
+        Belleza Mascotas, AutomÃƒÂ³viles y mucho mÃƒÂ¡s. Calidad, curadurÃƒÂ­a y experiencia en un solo lugar.
+      </p>
 
-      <div class="hero-visual">
-        <div class="card-visual">
-          <div class="moving-img main-img"></div>
-          <div class="card-legend">
-            <h3>Bienvenido a Botiguy</h3>
-            <p>Explora productos para el cuidado personal, automóviles, mascotas, hogar y más. Calidad y servicio en un solo lugar.</p>
-          </div>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://botiguy.demo-store.website/categoria/peluqueria-y-barberia-225805" target="_blank" rel="noopener">PeluquerÃƒÂ­a</a>
+        <a class="btn btn-outline" href="https://botiguy.demo-store.website/categoria/cuidado-personal-y-salud-225805" target="_blank" rel="noopener">Cuidado Personal</a>
+        <a class="btn btn-ghost" href="https://botiguy.demo-store.website/" target="_blank" rel="noopener">Ir a la tienda</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-card">
+        <div class="animated-img main-visual" aria-hidden="true"></div>
+        <div class="visual-caption">
+          <h3>SelecciÃƒÂ³n curada</h3>
+          <p>Productos premium, marcas seleccionadas y ofertas destacadas.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <main class="content">
-
-    <!-- CUIDADO PERSONAL -->
-    <section id="cuidado" class="section cards">
-      <h2 class="section-title">?? Cuidado Personal y Salud</h2>
-      <div class="grid">
-        <article class="tile">
-          <div class="tile-img" style="background-image:url('https://source.unsplash.com/900x700/?skincare,cosmetics')"></div>
-          <div class="tile-body">
-            <h3>Salud y cuidado</h3>
-            <p>Productos de higiene, cuidado diario y bienestar para todas las edades.</p>
-            <a class="tile-btn" href="https://botiguy.demo-store.website/categoria/cuidado-personal-y-salud-225805" target="_blank" rel="noopener">Explorar Cuidado Personal</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- PELUQUERIA -->
-    <section id="peluqueria" class="section cards alt">
-      <h2 class="section-title">?? Peluquería y Barbería</h2>
-      <div class="grid">
-        <article class="tile">
-          <div class="tile-img" style="background-image:url('https://source.unsplash.com/900x700/?barber,barbershop')"></div>
-          <div class="tile-body">
+  <!-- Main content: categories -->
+  <main class="main">
+    <section id="peluqueria" class="section">
+      <h2 class="section-title">PeluquerÃƒÂ­a y BarberÃƒÂ­a</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-media" style="background-image:url('https://source.unsplash.com/900x700/?barber,barbershop')" aria-hidden="true"></div>
+          <div class="card-body">
             <h3>Herramientas profesionales</h3>
-            <p>Máquinas, tijeras y accesorios para el profesional o entusiasta del estilismo.</p>
-            <a class="tile-btn" href="https://botiguy.demo-store.website/categoria/peluqueria-y-barberia-225805" target="_blank" rel="noopener">Ir a Peluquería y barbería</a>
+            <p>MÃƒÂ¡quinas, tijeras, capas y accesorios para profesionales y entusiastas.</p>
+            <a class="card-btn" href="https://botiguy.demo-store.website/categoria/peluqueria-y-barberia-225805" target="_blank" rel="noopener">Explorar PeluquerÃƒÂ­a</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media" style="background-image:url('https://source.unsplash.com/900x700/?hair,styling')" aria-hidden="true"></div>
+          <div class="card-body">
+            <h3>Productos de estilismo</h3>
+            <p>Pomadas, sprays y tratamientos para un acabado perfecto.</p>
+            <a class="card-btn" href="https://botiguy.demo-store.website/categoria/peluqueria-y-barberia-225805" target="_blank" rel="noopener">Ver productos</a>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- AUTOMOVILES -->
-    <section id="autos" class="section cards">
-      <h2 class="section-title">?? Automóviles</h2>
-      <div class="grid">
-        <article class="tile">
-          <div class="tile-img" style="background-image:url('https://source.unsplash.com/900x700/?car,detailing')"></div>
-          <div class="tile-body">
-            <h3>Mantenimiento y accesorios</h3>
-            <p>Kits de limpieza, ceras, accesorios y gadgets para tu vehículo.</p>
-            <a class="tile-btn" href="https://botiguy.demo-store.website/categoria/automoviles-225805" target="_blank" rel="noopener">Explorar Automóviles</a>
+    <section id="mascotas" class="section alt">
+      <h2 class="section-title">Belleza Mascotas</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-media" style="background-image:url('https://source.unsplash.com/900x700/?dog,grooming')" aria-hidden="true"></div>
+          <div class="card-body">
+            <h3>BaÃƒÂ±o y cuidado</h3>
+            <p>ChampÃƒÂºs, acondicionadores, perfumes y rutinas de cuidado profesional.</p>
+            <a class="card-btn" href="https://botiguy.demo-store.website/categoria/cuidado-personal-y-salud-225805" target="_blank" rel="noopener">Explorar Mascotas</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media" style="background-image:url('https://source.unsplash.com/900x700/?pet,accessories')" aria-hidden="true"></div>
+          <div class="card-body">
+            <h3>Accesorios y grooming</h3>
+            <p>Peines, cortauÃƒÂ±as y kits para mantener a tu mascota impecable.</p>
+            <a class="card-btn" href="https://botiguy.demo-store.website/categoria/cuidado-personal-y-salud-225805" target="_blank" rel="noopener">Ver categorÃƒÂ­a</a>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- VERANO -->
-    <section id="verano" class="section cards alt">
-      <h2 class="section-title">?? Verano</h2>
-      <div class="grid">
-        <article class="tile">
-          <div class="tile-img" style="background-image:url('https://source.unsplash.com/900x700/?summer,beach')"></div>
-          <div class="tile-body">
-            <h3>Ofertas de temporada</h3>
-            <p>Todo para disfrutar el verano: protección, accesorios y más.</p>
-            <a class="tile-btn" href="https://botiguy.demo-store.website/categoria/verano-225805" target="_blank" rel="noopener">Ver Verano</a>
+    <section id="autos" class="section">
+      <h2 class="section-title">AutomÃƒÂ³viles</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-media" style="background-image:url('https://source.unsplash.com/900x700/?car,detailing')" aria-hidden="true"></div>
+          <div class="card-body">
+            <h3>Mantenimiento y detalle</h3>
+            <p>Ceras, shampoos, kits de detailing y accesorios para tu auto.</p>
+            <a class="card-btn" href="https://botiguy.demo-store.website/categoria/automoviles-225805" target="_blank" rel="noopener">Explorar AutomÃƒÂ³viles</a>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- HOGAR -->
-    <section id="hogar" class="section cards">
-      <h2 class="section-title">?? Hogar</h2>
-      <div class="grid">
-        <article class="tile">
-          <div class="tile-img" style="background-image:url('https://source.unsplash.com/900x700/?home,decor')"></div>
-          <div class="tile-body">
-            <h3>Soluciones para tu hogar</h3>
-            <p>Organización, decoración y productos prácticos para el día a día.</p>
-            <a class="tile-btn" href="https://botiguy.demo-store.website/categoria/hogar-225805" target="_blank" rel="noopener">Ir a Hogar</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- CAMPING -->
-    <section id="camping" class="section cards alt">
-      <h2 class="section-title">??? Camping</h2>
-      <div class="grid">
-        <article class="tile">
-          <div class="tile-img" style="background-image:url('https://source.unsplash.com/900x700/?camping,outdoor')"></div>
-          <div class="tile-body">
-            <h3>Equipamiento outdoor</h3>
-            <p>Toldos, bolsos, linternas y todo para tu próxima aventura.</p>
-            <a class="tile-btn" href="https://botiguy.demo-store.website/categoria/camping-225805" target="_blank" rel="noopener">Explorar Camping</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- TECNOLOGIA -->
-    <section id="tecnologia" class="section cards">
-      <h2 class="section-title">?? Tecnología</h2>
-      <div class="grid">
-        <article class="tile">
-          <div class="tile-img" style="background-image:url('https://source.unsplash.com/900x700/?technology,gadgets')"></div>
-          <div class="tile-body">
-            <h3>Últimas novedades</h3>
-            <p>Dispositivos, accesorios y gadgets que hacen tu vida más fácil.</p>
-            <a class="tile-btn" href="https://botiguy.demo-store.website/categoria/tecnologia-225805" target="_blank" rel="noopener">Ir a Tecnología</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- GADGETS -->
-    <section id="gadgets" class="section cards alt">
-      <h2 class="section-title">?? Gadgets</h2>
-      <div class="grid">
-        <article class="tile">
-          <div class="tile-img" style="background-image:url('https://source.unsplash.com/900x700/?gadget,tech')"></div>
-          <div class="tile-body">
-            <h3>Gadgets útiles</h3>
-            <p>Complementos, accesorios y tecnología portable.</p>
-            <a class="tile-btn" href="https://botiguy.demo-store.website/categoria/gadgets-225805" target="_blank" rel="noopener">Ver Gadgets</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- OTROS -->
-    <section id="otros" class="section cards">
-      <h2 class="section-title">??? Otros</h2>
-      <div class="grid">
-        <article class="tile">
-          <div class="tile-img" style="background-image:url('https://source.unsplash.com/900x700/?store,products')"></div>
-          <div class="tile-body">
+    <section id="otros" class="section alt">
+      <h2 class="section-title">Otros</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-media" style="background-image:url('https://source.unsplash.com/900x700/?store,products')" aria-hidden="true"></div>
+          <div class="card-body">
             <h3>Variedad y sorpresas</h3>
-            <p>Artículos complementarios para todos los gustos.</p>
-            <a class="tile-btn" href="https://botiguy.demo-store.website/categoria/otros-225805" target="_blank" rel="noopener">Ir a Otros</a>
+            <p>ArtÃƒÂ­culos complementarios, regalos y kits especialmente seleccionados.</p>
+            <a class="card-btn" href="https://botiguy.demo-store.website/categoria/otros-225805" target="_blank" rel="noopener">Ir a Otros</a>
           </div>
         </article>
       </div>
     </section>
-
   </main>
 
-  <footer class="site-footer">
+  <!-- Marketing banner -->
+  <aside class="marketing-banner">
+    <div class="marketing-inner">
+      <h3>Descubre Botiguy</h3>
+      <p>Productos seleccionados por expertos y servicio confiable Ã¢â‚¬â€ una experiencia de compra que te inspira a volver.</p>
+      <a class="btn btn-primary" href="https://botiguy.demo-store.website/" target="_blank" rel="noopener">Visitar la tienda</a>
+    </div>
+  </aside>
+
+  <!-- Footer -->
+  <footer class="footer">
     <div class="footer-inner">
-      <div>
-        <strong>Botiguy</strong> — Confianza, estilo y soluciones en un solo lugar.
-      </div>
-      <div>
-        <a href="https://botiguy.demo-store.website/" target="_blank" rel="noopener">botiguy.demo-store.website</a>
-      </div>
+      <div>Ã‚Â© 2025 Botiguy Ã¢â‚¬â€ Confianza, estilo y soluciones en un solo lugar.</div>
+      <div><a href="https://botiguy.demo-store.website/" target="_blank" rel="noopener">botiguy.demo-store.website</a></div>
     </div>
   </footer>
 
-  <!-- G-Bot (Asistente IA flotante) -->
-  <button id="assistant-btn" aria-label="G-Bot">??</button>
+  <!-- G-Bot: botÃƒÂ³n flotante -->
+  <button id="gbot-btn" class="gbot-btn" aria-label="Abrir G-Bot">G</button>
 
-  <!-- Holograma modal -->
-  <div id="assistant-modal" class="assistant-modal" aria-hidden="true">
-    <div class="assist-shell">
-      <div class="assist-header">
-        <div class="assist-title">G-Bot — Asistente Botiguy</div>
-        <button id="assistant-close" class="close" aria-label="Cerrar">?</button>
-      </div>
+  <!-- G-Bot modal / holograma -->
+  <div id="gbot-modal" class="gbot-modal" aria-hidden="true">
+    <div class="gbot-shell">
+      <header class="gbot-header">
+        <div class="gbot-title">G-Bot</div>
+        <button id="gbot-close" class="gbot-close" aria-label="Cerrar">Ã¢Å“â€¢</button>
+      </header>
 
-      <div class="assist-body">
-        <div class="assist-tabs">
-          <button class="tab active" data-tab="help">Ayuda rápida</button>
-          <button class="tab" data-tab="faq">Preguntas frecuentes</button>
-          <button class="tab" data-tab="chat">Chat</button>
+      <div class="gbot-body">
+        <div class="gbot-tabs">
+          <button class="gbot-tab active" data-tab="quick">Ayuda rÃƒÂ¡pida</button>
+          <button class="gbot-tab" data-tab="faq">Preguntas</button>
+          <button class="gbot-tab" data-tab="chat">Chat</button>
         </div>
 
-        <div class="assist-panel" data-panel="help">
-          <h4>Accesos rápidos</h4>
-          <div class="assist-options">
-            <button class="assist-opt" data-action="goto" data-url="https://botiguy.demo-store.website/categoria/cuidado-personal-y-salud-225805">Cuidado Personal</button>
-            <button class="assist-opt" data-action="goto" data-url="https://botiguy.demo-store.website/categoria/peluqueria-y-barberia-225805">Peluquería</button>
-            <button class="assist-opt" data-action="goto" data-url="https://botiguy.demo-store.website/categoria/automoviles-225805">Automóviles</button>
-            <button class="assist-opt" data-action="goto" data-url="https://botiguy.demo-store.website/categoria/verano-225805">Verano</button>
-            <button class="assist-opt" data-action="goto" data-url="https://botiguy.demo-store.website/categoria/hogar-225805">Hogar</button>
-            <button class="assist-opt" data-action="goto" data-url="https://botiguy.demo-store.website/categoria/camping-225805">Camping</button>
-            <button class="assist-opt" data-action="goto" data-url="https://botiguy.demo-store.website/categoria/tecnologia-225805">Tecnología</button>
-            <button class="assist-opt" data-action="goto" data-url="https://botiguy.demo-store.website/categoria/gadgets-225805">Gadgets</button>
-            <button class="assist-opt" data-action="goto" data-url="https://botiguy.demo-store.website/categoria/otros-225805">Otros</button>
-            <button class="assist-opt" data-action="goto" data-url="https://botiguy.demo-store.website/">Ir a la tienda</button>
+        <div class="gbot-panel" data-panel="quick">
+          <div class="gbot-opts">
+            <button class="opt" data-url="https://botiguy.demo-store.website/categoria/cuidado-personal-y-salud-225805">Cuidado Personal</button>
+            <button class="opt" data-url="https://botiguy.demo-store.website/categoria/peluqueria-y-barberia-225805">PeluquerÃƒÂ­a</button>
+            <button class="opt" data-url="https://botiguy.demo-store.website/categoria/automoviles-225805">AutomÃƒÂ³viles</button>
+            <button class="opt" data-url="https://botiguy.demo-store.website/categoria/otros-225805">Otros</button>
+            <button class="opt" data-url="https://botiguy.demo-store.website/">Ir a la tienda</button>
           </div>
-          <hr />
-          <p>Pulsa una opción para ir a esa sección o escribe en el chat para preguntar.</p>
         </div>
 
-        <div class="assist-panel" data-panel="faq" style="display:none;">
-          <h4>Preguntas frecuentes</h4>
-          <div id="faq-list" class="faq-list"></div>
+        <div class="gbot-panel" data-panel="faq" style="display:none;">
+          <div id="gbot-faq" class="gbot-faq"></div>
         </div>
 
-        <div class="assist-panel" data-panel="chat" style="display:none;">
-          <div id="chat-window" class="chat-window" aria-live="polite"></div>
-          <form id="chat-form" class="chat-form">
-            <input id="chat-input" type="text" placeholder="Escribe tu pregunta..." autocomplete="off" />
-            <button type="submit" class="send">Enviar</button>
+        <div class="gbot-panel" data-panel="chat" style="display:none;">
+          <div id="gbot-chat" class="gbot-chat" aria-live="polite"></div>
+          <form id="gbot-form" class="gbot-form">
+            <input id="gbot-input" type="text" placeholder="Escribe tu pregunta..." aria-label="Mensaje a G-Bot" autocomplete="off" />
+            <button type="submit" class="gbot-send">Enviar</button>
           </form>
         </div>
       </div>
 
-      <div class="assist-footer">
-        <small>G-Bot — Asistente local. Responde en base al contenido del sitio y respuestas predefinidas.</small>
-      </div>
+      <footer class="gbot-footer">
+        <small>G-Bot Ã¢â‚¬â€ Responde en base al contenido del sitio y preguntas frecuentes. No usa servicios externos.</small>
+      </footer>
     </div>
   </div>
 
 </body>
 </html>
+
